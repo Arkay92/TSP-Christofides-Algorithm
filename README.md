@@ -23,8 +23,8 @@ Example:
 # Define your dataset
 data = [(1380, 939), (2848, 96), (3510, 1671)]  # Add more points as needed
 
-# Solve TSP
-length, path = tsp(data)
+# Solve TSP (method param exact or heuristic)
+length, path = tsp(data, "exact")
 
 print(f"Path: {path}")
 print(f"Total length: {length}")
