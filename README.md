@@ -12,3 +12,23 @@ Then, install the required NetworkX library using pip:
 
 ```bash
 pip install networkx
+
+## Usage
+To use this script, prepare your dataset as a list of tuples where each tuple represents the coordinates of a point (x, y). Then, pass this dataset to the tsp function.
+
+Example:
+```
+from tsp_solver import tsp
+
+# Define your dataset
+data = [(1380, 939), (2848, 96), (3510, 1671)]  # Add more points as needed
+
+# Solve TSP
+length, path = tsp(data)
+
+print(f"Path: {path}")
+print(f"Total length: {length}")
+```
+
+## Contributing
+Contributions to improve this TSP solver are welcome. Please feel free to fork the repository, make your changes, and submit a pull request.
