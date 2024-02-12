@@ -1,4 +1,4 @@
-# TSP-Christofides-Algorithm
+# TSP-Christofides-Algorithm-With-Integer-Linear-Programming
 This Python script is an implementation of an approximate solution for the Travelling Salesman Problem (TSP) using graph theory and approximation algorithms. It constructs a complete graph from a given set of points, finds a Minimum Spanning Tree (MST) using Kruskal's algorithm, performs a minimum weight perfect matching for vertices with odd degrees, and finally, finds an Eulerian tour to approximate a solution to TSP.
 
 ## Requirements
@@ -8,10 +8,10 @@ This Python script is an implementation of an approximate solution for the Trave
 ## Installation
 First, ensure that you have Python installed on your system. If not, download and install Python from [python.org](https://www.python.org/).
 
-Then, install the required NetworkX library using pip:
+Then, install the dependencies:
 
 ```bash
-pip install networkx
+pip install -r requirements.txt
 
 ## Usage
 To use this script, prepare your dataset as a list of tuples where each tuple represents the coordinates of a point (x, y). Then, pass this dataset to the tsp function.
