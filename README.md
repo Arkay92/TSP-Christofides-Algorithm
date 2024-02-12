@@ -23,18 +23,19 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-To use this script, prepare your dataset as a list of tuples where each tuple represents the coordinates of a point (x, y). Then, pass this dataset to the tsp function.
+To use this script, prepare your dataset as a list of tuples where each tuple represents the coordinates of a point (x, y). Then, pass this dataset to the tsp function. If no method parameter is given, the default method used will be 'heuristic'.
 
 Example:
-```from tsp_solver import tsp
+```python
+from tsp_solver import tsp
 
 # Define your dataset
 data = [(1380, 939), (2848, 96), (3510, 1671)]  # Add more points as needed
 
-# Solve TSP (method param exact or heuristic)
+# Solve TSP (method param exact or heuristic, default is heuristic)
 length, path = tsp(data, "exact")
 
-print(f"Path: {path}")
+print(f"Path: {path}")  # Path will be a list of integers representing the order of cities visited
 print(f"Total length: {length}")
 ```
 
