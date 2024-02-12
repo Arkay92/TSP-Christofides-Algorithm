@@ -12,6 +12,7 @@ Then, install the dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## Usage
 To use this script, prepare your dataset as a list of tuples where each tuple represents the coordinates of a point (x, y). Then, pass this dataset to the tsp function.
