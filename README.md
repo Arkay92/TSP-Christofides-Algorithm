@@ -26,7 +26,8 @@ data = [(1380, 939), (2848, 96), (3510, 1671)]  # Add more points as needed
 length, path = tsp(data)
 
 print(f"Path: {path}")
-print(f"Total length: {length}")```
+print(f"Total length: {length}")
+```
 
 ## Contributing
 Contributions to improve this TSP solver are welcome. Please feel free to fork the repository, make your changes, and submit a pull request.
