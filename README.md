@@ -1,5 +1,5 @@
 # TSP-Christofides-Algorithm-With-Integer-Linear-Programming
-This Python script provides an implementation of both an approximate and an exact solution for the Travelling Salesman Problem (TSP). The TSP is a combinatorial optimization problem where the goal is to find the shortest possible route that visits each city exactly once and returns to the original city.
+This Python script provides an implementation of both an approximate and an exact solution for the Travelling Salesman Problem (TSP). The TSP is a combinatorial optimization problem where the end goal is to find the shortest possible route that visits each city exactly once and returns to the original city.
 
 For the approximate solution, the script constructs a complete graph from the given set of points, finds a Minimum Spanning Tree (MST) using Kruskal's algorithm, performs a minimum weight perfect matching for vertices with odd degrees, and finally, finds an Eulerian tour to approximate a solution to TSP. This approach is based on heuristic methods to quickly find a near-optimal solution.
 
